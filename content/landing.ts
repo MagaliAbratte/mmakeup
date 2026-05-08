@@ -72,28 +72,28 @@ export const landingPageData: LandingPageData = {
   services: [
     {
       title: "Maquillaje Social",
-      description: "Un look completo para eventos, fiestas y ocasiones especiales.",
+      description: "Un maquillaje pensado para que te veas increíble y te sientas cómoda durante todo el evento",
       duration: "1 h",
       studioPrice: "$90.000",
       homePrice: "$120.000"
     },
     {
       title: "Maquillaje Social Premium",
-      description: "Más tiempo de preparación y detalle para un acabado más trabajado.",
+      description: "Una experiencia más completa, incluye todo lo del maquillaje social y más",
       duration: "1 h 30 m",
       studioPrice: "$120.000",
       homePrice: "$150.000"
     },
     {
       title: "Maquillaje de Novia",
-      description: "Diseño de look para el día de la boda, con foco en duración y fotografía.",
+      description: "Un maquillaje diseñado especialmente para uno de los días más importantes de tu vida. Es un servicio premium y completamente personalizado, donde te acompaño desde la preparación previa hasta el momento final.",
       duration: "+1 h 30 m",
       studioPrice: "$150.000",
       homePrice: "$180.000"
     },
     {
       title: "Clases de automaquillaje",
-      description: "Aprendé técnicas para tu rutina y armá un look que puedas repetir sola.",
+      description: "Aprendé a maquillarte con los productos que ya tenés y a sacarles el máximo provecho",
       duration: "+2 h",
       studioPrice: "$80.000",
       homePrice: "$100.000",
@@ -102,8 +102,7 @@ export const landingPageData: LandingPageData = {
     {
       title: "Producciones de moda",
       description: "Maquillaje para campañas, editoriales, contenido de marca y sesiones.",
-      duration: "Según modalidad",
-      note: "A convenir"
+      duration: "A convenir segun modalidad"
     }
   ],
   booking: {
@@ -136,7 +135,7 @@ export const landingPageData: LandingPageData = {
   contact: {
     title: "¿Te gustaría que te maquille?",
     description: "Escribime por WhatsApp, te paso más info y vemos juntas tu idea.",
-    whatsappLabel: "Escribirme por WhatsApp",
+    whatsappLabel: "Escribime por WhatsApp",
     whatsappUrl: "https://wa.me/5493563404877",
     phone: "+54 9 3563 40-4877",
     instagram: "@mmakeup",

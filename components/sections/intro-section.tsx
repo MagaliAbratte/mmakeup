@@ -16,6 +16,7 @@ export function IntroSection() {
         </div>
 
         <div className="relative flex justify-end overflow-visible">
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-10 h-14 bg-gradient-to-b from-white to-white/0" />
           <Image
             src={editorialImage}
             alt="Texturas y tonos de maquillaje Mmakeup"

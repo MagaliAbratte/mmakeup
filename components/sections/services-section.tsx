@@ -28,12 +28,28 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               </div>
 
               <div className="text-sm text-muted-foreground transition-all duration-500 ease-out group-hover:translate-x-1 group-hover:text-foreground sm:text-right">
-                <div className="flex flex-wrap items-center gap-x-5 gap-y-2 sm:justify-end">
-                  <p className="font-semibold uppercase tracking-[0.14em] text-foreground">{service.duration}</p>
-                  {service.studioPrice ? <p>Estudio {service.studioPrice}</p> : null}
-                  {service.homePrice ? <p>Domicilio {service.homePrice}</p> : null}
-                </div>
-                {service.note ? <p className="mt-2 font-semibold text-primary">{service.note}</p> : null}
+                {service.studioPrice || service.homePrice ? (
+                  <>
+                    <div className="grid grid-cols-[auto_1fr] items-center gap-x-5 gap-y-2 sm:flex sm:flex-wrap sm:justify-end">
+                      <p className="font-medium uppercase tracking-[0.14em] text-foreground">{service.duration}</p>
+                      <div className="space-y-1 text-right sm:flex sm:gap-x-5 sm:space-y-0">
+                        {service.studioPrice ? (
+                          <p>
+                            <span className="font-semibold text-foreground">En estudio</span> {service.studioPrice}
+                          </p>
+                        ) : null}
+                        {service.homePrice ? (
+                          <p>
+                            <span className="font-semibold text-foreground">A domicilio</span> {service.homePrice}
+                          </p>
+                        ) : null}
+                      </div>
+                    </div>
+                    {service.note ? <p className="mt-2 font-semibold text-primary">{service.note}</p> : null}
+                  </>
+                ) : (
+                  <p className="font-semibold text-primary">{service.duration}</p>
+                )}
               </div>
             </article>
           ))}

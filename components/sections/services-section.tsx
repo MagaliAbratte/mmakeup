@@ -18,7 +18,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           {services.map((service) => (
             <article
               key={service.title}
-              className="group grid gap-5 py-6 transition-all duration-500 ease-out hover:bg-muted/35 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:px-5 sm:hover:px-7"
+              className="group grid gap-5 py-6 transition-all duration-500 ease-out hover:bg-muted/35 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start sm:px-5 sm:hover:px-7"
             >
               <div className="transition-transform duration-500 ease-out group-hover:translate-x-1">
                 <h3 className="text-2xl font-semibold leading-tight text-foreground sm:text-3xl">{service.title}</h3>
@@ -51,6 +51,57 @@ export function ServicesSection({ services }: ServicesSectionProps) {
                   <p className="font-semibold text-primary">{service.duration}</p>
                 )}
               </div>
+
+              {service.details ? (
+                <details className="group/details max-w-2xl text-sm leading-6 text-muted-foreground sm:col-span-2">
+                  <summary className="cursor-pointer list-none font-semibold text-primary transition-colors hover:text-foreground">
+                    <span className="group-open/details:hidden">Ver más info</span>
+                    <span className="hidden group-open/details:inline">Ocultar info</span>
+                  </summary>
+                  <div className="mt-3 space-y-3 border-l border-border pl-4">
+                    {service.details.intro ? <p>{service.details.intro}</p> : null}
+                    {service.details.items?.length ? (
+                      <div>
+                        <p className="mb-1 font-semibold text-foreground">{service.details.itemsLabel ?? "El servicio incluye:"}</p>
+                        <ul className="list-disc space-y-1 pl-4">
+                          {service.details.items.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
+                    {service.details.requirementTitle || service.details.requirement ? (
+                      <div>
+                        {service.details.requirementTitle ? (
+                          <p className="mb-1 text-xs font-semibold uppercase tracking-[0.14em] text-foreground">
+                            {service.details.requirementTitle}
+                          </p>
+                        ) : null}
+                        {service.details.requirement ? <p>{service.details.requirement}</p> : null}
+                      </div>
+                    ) : null}
+                    {service.details.footer?.length ? <p>{service.details.footer.join(" ")}</p> : null}
+                    {service.details.modalityTitle || service.details.modality || service.details.modalityItems?.length ? (
+                      <div>
+                        {service.details.modalityTitle ? (
+                          <p className="mb-1 text-xs font-semibold uppercase tracking-[0.14em] text-foreground">
+                            {service.details.modalityTitle}
+                          </p>
+                        ) : null}
+                        {service.details.modality ? <p>{service.details.modality}</p> : null}
+                        {service.details.modalityItems?.length ? (
+                          <ul className="list-disc space-y-1 pl-4">
+                            {service.details.modalityItems.map((item) => (
+                              <li key={item}>{item}</li>
+                            ))}
+                          </ul>
+                        ) : null}
+                      </div>
+                    ) : null}
+                    {service.details.ideal ? <p className="font-semibold text-foreground">{service.details.ideal}</p> : null}
+                  </div>
+                </details>
+              ) : null}
             </article>
           ))}
         </div>

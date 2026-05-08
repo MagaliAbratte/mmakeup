@@ -10,6 +10,18 @@ export type Service = {
   studioPrice?: string;
   homePrice?: string;
   note?: string;
+  details?: {
+    intro?: string;
+    itemsLabel?: string;
+    items?: string[];
+    requirementTitle?: string;
+    requirement?: string;
+    modalityTitle?: string;
+    modality?: string;
+    modalityItems?: string[];
+    ideal?: string;
+    footer?: string[];
+  };
 };
 
 export type LandingPageData = {
@@ -75,21 +87,63 @@ export const landingPageData: LandingPageData = {
       description: "Un maquillaje pensado para que te veas increíble y te sientas cómoda durante todo el evento",
       duration: "1 h",
       studioPrice: "$90.000",
-      homePrice: "$120.000"
+      homePrice: "$120.000",
+      details: {
+        items: [
+          "Análisis de tipo de piel, facciones y estilo personal.",
+          "Preparación adecuada de la piel: limpieza, hidratación y protección solar.",
+          "Maquillaje profesional, completo y personalizado.",
+          "Pestañas postizas individuales con acabado natural."
+        ],
+        ideal: "Ideal para invitadas, eventos, salidas o fiestas.",
+        footer: [
+          "Todos los maquillajes están pensados para acompañarte durante todo el evento.",
+          "Larga duración (+12 hs).",
+          "Resistentes al sudor y lágrimas.",
+          "Productos de preparación de la piel y maquillaje de primeras marcas, hipoalergénicos y seguros."
+        ]
+      }
     },
     {
       title: "Maquillaje Social Premium",
       description: "Una experiencia más completa, incluye todo lo del maquillaje social y más",
       duration: "1 h 30 m",
       studioPrice: "$120.000",
-      homePrice: "$150.000"
+      homePrice: "$150.000",
+      details: {
+        items: [
+          "Prueba de maquillaje opcional.",
+          "Preparación de la piel más completa: limpieza, hidratación con mascarilla de tela, exfoliación de labios y retoque de cejas."
+        ],
+        ideal: "Ideal para quinceañeras, egresadas y eventos especiales.",
+        footer: [
+          "Todos los maquillajes están pensados para acompañarte durante todo el evento.",
+          "Larga duración (+12 hs).",
+          "Resistentes al sudor y lágrimas.",
+          "Productos de preparación de la piel y maquillaje de primeras marcas, hipoalergénicos y seguros."
+        ]
+      }
     },
     {
       title: "Maquillaje de Novia",
       description: "Un maquillaje diseñado especialmente para uno de los días más importantes de tu vida. Es un servicio premium y completamente personalizado, donde te acompaño desde la preparación previa hasta el momento final.",
       duration: "+1 h 30 m",
       studioPrice: "$150.000",
-      homePrice: "$180.000"
+      homePrice: "$180.000",
+      details: {
+        items: [
+          "Prueba de maquillaje previa para definir juntas el estilo ideal según tu rostro, vestido y tipo de evento.",
+          "Asesoramiento personalizado: piel, tonos, acabado y estilo general.",
+          "Preparación completa de la piel: limpieza, hidratación profunda con mascarilla de tela, exfoliación de labios, retoque de cejas y protección solar.",
+          "Maquillaje profesional, adaptado a tu tipo de piel y de larga duración (+12 hs), resistente a lágrimas y sudor.",
+          "Pestañas postizas individuales con acabado natural.",
+          "Acompañamiento exclusivo el día del evento, con tiempo dedicado a vos y ajustes finales para que salgas perfecta.",
+          "Kit de retoque para que estés impecable durante toda la jornada."
+        ],
+        footer: [
+          "Trabajo con productos profesionales de preparación de la piel y maquillaje de primeras marcas, seleccionados según tu tipo de piel para lograr un acabado impecable y duradero."
+        ]
+      }
     },
     {
       title: "Clases de automaquillaje",
@@ -97,7 +151,25 @@ export const landingPageData: LandingPageData = {
       duration: "+2 h",
       studioPrice: "$80.000",
       homePrice: "$100.000",
-      note: "Grupales 10% off por persona"
+      note: "Grupales 10% off por persona",
+      details: {
+        itemsLabel: "",
+        items: [
+          "Vas a aprender técnicas básicas pero actuales.",
+          "Orden correcto de aplicación y tips para tu día a día.",
+          "Clase adaptada a tu tipo de piel, rostro y estilo."
+        ],
+        requirementTitle: "¿Qué necesitás?",
+        requirement: "Tu neceser con los productos que usás siempre.",
+        modalityTitle: "Modalidad",
+        modalityItems: [
+          "Individual: 100% personalizada.",
+          "Grupal: 10% de descuento por persona y la clase puede extenderse un poco más."
+        ],
+        footer: [
+          "Durante la clase también vas a contar con maquillaje profesional, brochas, herramientas y productos complementarios para completar el paso a paso."
+        ]
+      }
     },
     {
       title: "Producciones de moda",

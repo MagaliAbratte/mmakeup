@@ -85,7 +85,7 @@ export const landingPageData: LandingPageData = {
     {
       title: "Maquillaje Social",
       description: "Un maquillaje pensado para que te veas increíble y te sientas cómoda durante todo el evento",
-      duration: "1 h",
+      duration: "1 hs",
       studioPrice: "$90.000",
       homePrice: "$120.000",
       details: {
@@ -97,17 +97,15 @@ export const landingPageData: LandingPageData = {
         ],
         ideal: "Ideal para invitadas, eventos, salidas o fiestas.",
         footer: [
-          "Todos los maquillajes están pensados para acompañarte durante todo el evento.",
-          "Larga duración (+12 hs).",
-          "Resistentes al sudor y lágrimas.",
-          "Productos de preparación de la piel y maquillaje de primeras marcas, hipoalergénicos y seguros."
+          "Todos los maquillajes son de larga duración (+12h) y están pensados para acompañarte durante todo el evento, resistentes al sudor y lágrimas.",
+          "Trabajo con productos de preparación de la piel y maquillaje de primeras marcas, hipoalergénicos y seguros." 
         ]
       }
     },
     {
       title: "Maquillaje Social Premium",
       description: "Una experiencia más completa, incluye todo lo del maquillaje social y más",
-      duration: "1 h 30 m",
+      duration: "1 hs 30 m",
       studioPrice: "$120.000",
       homePrice: "$150.000",
       details: {
@@ -117,17 +115,15 @@ export const landingPageData: LandingPageData = {
         ],
         ideal: "Ideal para quinceañeras, egresadas y eventos especiales.",
         footer: [
-          "Todos los maquillajes están pensados para acompañarte durante todo el evento.",
-          "Larga duración (+12 hs).",
-          "Resistentes al sudor y lágrimas.",
-          "Productos de preparación de la piel y maquillaje de primeras marcas, hipoalergénicos y seguros."
+          "Todos los maquillajes son de larga duración (+12h) y están pensados para acompañarte durante todo el evento, resistentes al sudor y lágrimas.",
+          "Trabajo con productos de preparación de la piel y maquillaje de primeras marcas, hipoalergénicos y seguros." 
         ]
       }
     },
     {
       title: "Maquillaje de Novia",
       description: "Un maquillaje diseñado especialmente para uno de los días más importantes de tu vida. Es un servicio premium y completamente personalizado, donde te acompaño desde la preparación previa hasta el momento final.",
-      duration: "+1 h 30 m",
+      duration: "+1 hs 30 m",
       studioPrice: "$150.000",
       homePrice: "$180.000",
       details: {
@@ -148,7 +144,7 @@ export const landingPageData: LandingPageData = {
     {
       title: "Clases de automaquillaje",
       description: "Aprendé a maquillarte con los productos que ya tenés y a sacarles el máximo provecho",
-      duration: "+2 h",
+      duration: "+2 hs",
       studioPrice: "$80.000",
       homePrice: "$100.000",
       note: "Grupales 10% off por persona",
@@ -206,8 +202,8 @@ export const landingPageData: LandingPageData = {
   ],
   contact: {
     title: "¿Te gustaría que te maquille?",
-    description: "Escribime por WhatsApp, te paso más info y vemos juntas tu idea.",
-    whatsappLabel: "Escribime por WhatsApp",
+    description: "Escribime por WhatsApp y vemos juntas tu idea.",
+    whatsappLabel: "WhatsApp",
     whatsappUrl: "https://wa.me/5493563404877",
     phone: "+54 9 3563 40-4877",
     instagram: "@mmakeup",

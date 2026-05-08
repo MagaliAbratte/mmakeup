@@ -15,7 +15,7 @@ Grupales 10% off por persona
 Maquillaje para producciones de moda
 A convenir segun la modalidad
 ¿Te gustaría que te maquille?
-Escribime por WhatsApp, te paso más info 
+Escribime por WhatsApp 
 y vemos juntas tu idea
 
 Info de turnos y reservas

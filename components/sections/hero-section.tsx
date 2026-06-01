@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 import logoImage from "@/app/assets/Logo2.png";
-import heroImage from "@/app/assets/portada.jpeg";
 import type { LandingPageData } from "@/content/landing";
 
 type HeroSectionProps = {
@@ -12,13 +11,10 @@ export function HeroSection({ brand }: HeroSectionProps) {
   return (
     <section className="pb-8 sm:pb-10">
       <div className="relative min-h-[68svh] w-full overflow-hidden bg-white sm:min-h-[76vh]">
-        <Image
-          src={heroImage}
+        <img
+          src="/assets/portada1.jpeg"
           alt="Retrato beauty editorial para Mmakeup"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-center"
+          className="absolute inset-0 h-full w-full object-cover object-[center_58%]"
         />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.28)_0%,rgba(255,255,255,0.03)_42%,rgba(0,0,0,0.26)_100%)]" />
         <div className="pointer-events-none absolute inset-x-0 -bottom-px h-36 bg-gradient-to-b from-white/0 via-white/85 to-white sm:h-44" />

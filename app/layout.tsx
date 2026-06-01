@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mmakeup | Maquillaje Profesional en Córdoba",
+  title: "M Makeup | Maquillaje Profesional en Córdoba",
   description: "Beauty studio de maquillaje profesional en Nueva Córdoba."
 };
 

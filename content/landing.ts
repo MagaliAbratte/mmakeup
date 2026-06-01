@@ -111,7 +111,7 @@ export const landingPageData: LandingPageData = {
       details: {
         items: [
           "Prueba de maquillaje opcional.",
-          "Preparación de la piel más completa: limpieza, hidratación con mascarilla de tela, exfoliación de labios y retoque de cejas."
+          "Preparación de la piel más completa: limpieza, hidratación de ojeras con pads de tela, exfoliación de labios y retoque de cejas."
         ],
         ideal: "Ideal para quinceañeras, egresadas y eventos especiales.",
         footer: [
@@ -130,7 +130,7 @@ export const landingPageData: LandingPageData = {
         items: [
           "Prueba de maquillaje previa para definir juntas el estilo ideal según tu rostro, vestido y tipo de evento.",
           "Asesoramiento personalizado: piel, tonos, acabado y estilo general.",
-          "Preparación completa de la piel: limpieza, hidratación profunda con mascarilla de tela, exfoliación de labios, retoque de cejas y protección solar.",
+          "Preparación completa de la piel: limpieza, hidratación de ojeras con pads de tela, exfoliación de labios, retoque de cejas y protección solar.",
           "Maquillaje profesional, adaptado a tu tipo de piel y de larga duración (+12 hs), resistente a lágrimas y sudor.",
           "Pestañas postizas individuales con acabado natural.",
           "Acompañamiento exclusivo el día del evento, con tiempo dedicado a vos y ajustes finales para que salgas perfecta.",

@@ -3,21 +3,25 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
 import logoImage from "@/app/assets/Logo2.png";
-import port1 from "@/app/assets/port1.jpeg";
-import port2 from "@/app/assets/port2.jpeg";
-import port3 from "@/app/assets/port3.jpeg";
-import port4 from "@/app/assets/port4.jpeg";
-import port5 from "@/app/assets/port5.jpeg";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Button } from "@/components/ui/button";
 import { landingPageData } from "@/content/landing";
 
 const portfolioImages = [
-  { src: port1, alt: "Trabajo de maquillaje profesional Mmakeup 1" },
-  { src: port2, alt: "Trabajo de maquillaje profesional Mmakeup 2" },
-  { src: port3, alt: "Trabajo de maquillaje profesional Mmakeup 3" },
-  { src: port4, alt: "Trabajo de maquillaje profesional Mmakeup 4" },
-  { src: port5, alt: "Trabajo de maquillaje profesional Mmakeup 5" }
+  { src: "/assets/work15.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 15" },
+  { src: "/assets/work16.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 16" },
+  { src: "/assets/work1.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 1" },
+  { src: "/assets/work3.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 3" },
+  { src: "/assets/work4.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 4" },
+  { src: "/assets/work5.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 5" },
+  { src: "/assets/work17.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 17" },
+  { src: "/assets/work18.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 18" },
+  { src: "/assets/work6.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 6" },
+  { src: "/assets/work8.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 8" },
+  { src: "/assets/work9.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 9" },
+  { src: "/assets/work10.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 10" },
+  { src: "/assets/work12.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 12" },
+  { src: "/assets/work14.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 14" }
 ];
 
 export default function PortfolioPage() {
@@ -58,12 +62,11 @@ export default function PortfolioPage() {
                 key={image.alt}
                 className={index === 0 ? "overflow-hidden rounded-lg lg:col-span-2 lg:row-span-2" : "overflow-hidden rounded-lg"}
               >
-                <Image
+                <img
                   src={image.src}
                   alt={image.alt}
-                  sizes={index === 0 ? "(min-width: 1024px) 66vw, 100vw" : "(min-width: 1024px) 33vw, 50vw"}
+                  loading={index === 0 ? "eager" : "lazy"}
                   className="aspect-[4/5] h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
-                  priority={index === 0}
                 />
               </div>
             ))}

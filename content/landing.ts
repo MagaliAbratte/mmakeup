@@ -86,8 +86,8 @@ export const landingPageData: LandingPageData = {
       title: "Maquillaje Social",
       description: "Un maquillaje pensado para que te veas increíble y te sientas cómoda durante todo el evento",
       duration: "1 hs",
-      studioPrice: "$90.000",
-      homePrice: "$120.000",
+      studioPrice: "$80.000",
+      homePrice: "$100.000",
       details: {
         items: [
           "Análisis de tipo de piel, facciones y estilo personal.",
@@ -106,8 +106,8 @@ export const landingPageData: LandingPageData = {
       title: "Maquillaje Social Premium",
       description: "Una experiencia más completa, incluye todo lo del maquillaje social y más",
       duration: "1 hs 30 m",
-      studioPrice: "$120.000",
-      homePrice: "$150.000",
+      studioPrice: "$100.000",
+      homePrice: "$120.000",
       details: {
         items: [
           "Prueba de maquillaje opcional.",
@@ -124,8 +124,8 @@ export const landingPageData: LandingPageData = {
       title: "Maquillaje de Novia",
       description: "Un maquillaje diseñado especialmente para uno de los días más importantes de tu vida. Es un servicio premium y completamente personalizado, donde te acompaño desde la preparación previa hasta el momento final.",
       duration: "+1 hs 30 m",
-      studioPrice: "$150.000",
-      homePrice: "$180.000",
+      studioPrice: "$130.000",
+      homePrice: "$150.000",
       details: {
         items: [
           "Prueba de maquillaje previa para definir juntas el estilo ideal según tu rostro, vestido y tipo de evento.",
@@ -145,8 +145,8 @@ export const landingPageData: LandingPageData = {
       title: "Clases de automaquillaje",
       description: "Aprendé a maquillarte con los productos que ya tenés y a sacarles el máximo provecho",
       duration: "+2 hs",
-      studioPrice: "$80.000",
-      homePrice: "$100.000",
+      studioPrice: "$60.000",
+      homePrice: "$80.000",
       note: "Grupales 10% off por persona",
       details: {
         itemsLabel: "",

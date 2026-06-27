@@ -86,8 +86,8 @@ export const landingPageData: LandingPageData = {
       title: "Maquillaje Social",
       description: "Un maquillaje pensado para que te veas increíble y te sientas cómoda durante todo el evento",
       duration: "1 hs",
-      studioPrice: "$80.000",
-      homePrice: "$100.000",
+      studioPrice: "$60.000",
+      homePrice: "$80.000",
       details: {
         items: [
           "Análisis de tipo de piel, facciones y estilo personal.",
@@ -106,8 +106,8 @@ export const landingPageData: LandingPageData = {
       title: "Maquillaje Social Premium",
       description: "Una experiencia más completa, incluye todo lo del maquillaje social y más",
       duration: "1 hs 30 m",
-      studioPrice: "$100.000",
-      homePrice: "$120.000",
+      studioPrice: "$80.000",
+      homePrice: "$100.000",
       details: {
         items: [
           "Prueba de maquillaje opcional.",
@@ -145,8 +145,8 @@ export const landingPageData: LandingPageData = {
       title: "Clases de automaquillaje",
       description: "Aprendé a maquillarte con los productos que ya tenés y a sacarles el máximo provecho",
       duration: "+2 hs",
-      studioPrice: "$60.000",
-      homePrice: "$80.000",
+      studioPrice: "$50.000",
+      homePrice: "$65.000",
       note: "Grupales 10% off por persona",
       details: {
         itemsLabel: "",

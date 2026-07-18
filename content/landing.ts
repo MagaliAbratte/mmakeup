@@ -180,7 +180,7 @@ export const landingPageData: LandingPageData = {
       "Agenda abierta todo el año.",
       "Seña del 25% para confirmar el turno.",
       "Se recomienda reservar con al menos 1 mes de anticipación. Tambien podes consultar disponibilidad sobre la fecha.",
-      "Estudio en Chacabuco 625, Nueva Córdoba.",
+      "Estudio en Nueva Córdoba.",
     ]
   },
   testimonials: [
@@ -207,6 +207,6 @@ export const landingPageData: LandingPageData = {
     whatsappUrl: "https://wa.me/5493563404877",
     phone: "+54 9 3563 40-4877",
     instagram: "@mmakeup",
-    address: "Chacabuco 625, Nueva Córdoba"
+    address: "Córdoba Capital"
   }
 };

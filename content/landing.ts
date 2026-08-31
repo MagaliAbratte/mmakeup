@@ -142,6 +142,25 @@ export const landingPageData: LandingPageData = {
       }
     },
     {
+      title: "Prueba de Maquillaje",
+      description: "Una instancia pensada para probar, definir y ajustar tu maquillaje antes de una fecha especial.",
+      duration: "1 hs",
+      studioPrice: "$50.000",
+      note: "Solo en estudio",
+      details: {
+        intro: "Durante la prueba vemos juntas qué estilo te favorece más según tus facciones, tipo de piel, gustos, outfit y evento. Podemos probar tonos, intensidades y terminaciones hasta encontrar una propuesta con la que realmente te sientas cómoda.",
+        itemsLabel: "El servicio incluye:",
+        items: [
+          "Análisis de tipo de piel, facciones y estilo personal.",
+          "Preparación de la piel.",
+          "Prueba de maquillaje profesional y personalizado.",
+          "Definición de tonos, productos y acabado para el look final.",
+          "Ajustes y cambios durante la prueba para terminar de definir el maquillaje ideal."
+        ],
+        ideal: "Ideal si querés llegar a tu evento con el look previamente definido, especialmente para quinceañeras, egresadas, novias o eventos importantes."
+      }
+    },
+    {
       title: "Clases de automaquillaje",
       description: "Aprendé a maquillarte con los productos que ya tenés y a sacarles el máximo provecho",
       duration: "+2 hs",

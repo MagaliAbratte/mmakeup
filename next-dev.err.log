@@ -1,0 +1,6 @@
+[Error: UNKNOWN: unknown error, readlink 'C:\Users\Usuario\OneDrive\Documents\MMAKEUP-APP\.next\react-loadable-manifest.json'] {
+  errno: -4094,
+  code: 'UNKNOWN',
+  syscall: 'readlink',
+  path: 'C:\\Users\\Usuario\\OneDrive\\Documents\\MMAKEUP-APP\\.next\\react-loadable-manifest.json'
+}

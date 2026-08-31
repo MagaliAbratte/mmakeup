@@ -146,7 +146,6 @@ export const landingPageData: LandingPageData = {
       description: "Una instancia pensada para probar, definir y ajustar tu maquillaje antes de una fecha especial.",
       duration: "1 hs",
       studioPrice: "$50.000",
-      note: "Solo en estudio",
       details: {
         intro: "Durante la prueba vemos juntas qué estilo te favorece más según tus facciones, tipo de piel, gustos, outfit y evento. Podemos probar tonos, intensidades y terminaciones hasta encontrar una propuesta con la que realmente te sientas cómoda.",
         itemsLabel: "El servicio incluye:",
@@ -225,7 +224,7 @@ export const landingPageData: LandingPageData = {
     whatsappLabel: "WhatsApp",
     whatsappUrl: "https://wa.me/5493563404877",
     phone: "+54 9 3563 40-4877",
-    instagram: "@mmakeup",
+    instagram: "@maguiabratte.makeup",
     address: "Córdoba Capital"
   }
 };

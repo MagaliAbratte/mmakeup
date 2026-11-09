@@ -11,10 +11,10 @@ export function IntroSection() {
       <div className="grid items-center gap-3 pl-4 sm:gap-5 md:grid-cols-[minmax(0,1fr)_minmax(360px,46vw)] md:gap-12 md:pl-[max(2rem,calc((100vw-1200px)/2))]">
         <div className="mx-auto max-w-2xl text-center md:mx-0">
           <h2 className="text-balance text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl">
-            Maquillaje Profesional
+            Maquillaje que resalta tu esencia.
           </h2>
           <p className="mx-auto mt-7 max-w-xl text-base leading-8 text-muted-foreground sm:text-lg">
-            Maquillaje Social | Maquillaje para Novias | Maquillaje Editorial | Automaquillaje
+            Cada mujer es unica. Mi propósito es acompañarte a descubrir y potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión.
           </p>
           <Button
             asChild

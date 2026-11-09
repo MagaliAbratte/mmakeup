@@ -12,7 +12,6 @@ export function BookingSection({ booking }: BookingSectionProps) {
           <h2 className="text-balance text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl">
             {booking.title}
           </h2>
-          <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">{booking.description}</p>
         </div>
 
         <ul className="mx-auto max-w-5xl divide-y divide-border border-y border-border text-left">

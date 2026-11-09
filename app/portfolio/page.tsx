@@ -9,10 +9,12 @@ import { landingPageData } from "@/content/landing";
 
 const portfolioImages = [
   { src: "/assets/work1.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 1" },
+  { src: "/assets/work2.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 2" },
   { src: "/assets/work3.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 3" },
   { src: "/assets/work4.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 4" },
   { src: "/assets/work5.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 5" },
   { src: "/assets/work6.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 6" },
+  { src: "/assets/work7.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 7" },
   { src: "/assets/work8.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 8" },
   { src: "/assets/work9.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 9" },
   { src: "/assets/work10.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 10" }
@@ -32,15 +34,10 @@ export default function PortfolioPage() {
               <h1 className="mt-4 text-balance text-4xl font-semibold leading-tight tracking-normal sm:text-6xl">
                 Portfolio
               </h1>
-              <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-                Una selección de trabajos de maquillaje social, editorial y producciones.
-              </p>
             </div>
 
             <Button
               asChild
-              variant="default"
-              size="lg"
               className="rounded-full bg-primary px-7 text-primary-foreground shadow-none transition-all duration-500 hover:bg-primary/90 hover:px-8"
             >
               <Link href="/">

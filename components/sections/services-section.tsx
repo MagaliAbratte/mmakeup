@@ -81,14 +81,13 @@ export function ServicesSection({ services }: ServicesSectionProps) {
                       </div>
                     ) : null}
                     {service.details.footer?.length ? <p>{service.details.footer.join(" ")}</p> : null}
-                    {service.details.modalityTitle || service.details.modality || service.details.modalityItems?.length ? (
+                    {service.details.modalityTitle || service.details.modalityItems?.length ? (
                       <div>
                         {service.details.modalityTitle ? (
                           <p className="mb-1 text-xs font-semibold uppercase tracking-[0.14em] text-foreground">
                             {service.details.modalityTitle}
                           </p>
                         ) : null}
-                        {service.details.modality ? <p>{service.details.modality}</p> : null}
                         {service.details.modalityItems?.length ? (
                           <ul className="list-disc space-y-1 pl-4">
                             {service.details.modalityItems.map((item) => (

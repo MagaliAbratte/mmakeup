@@ -26,8 +26,6 @@ export function ContactSection({ contact }: ContactSectionProps) {
 
         <Button
           asChild
-          variant="default"
-          size="lg"
           className="mt-9 rounded-full bg-primary px-7 text-primary-foreground shadow-none transition-all duration-500 hover:bg-primary/90 hover:px-8"
         >
           <Link href={contact.whatsappUrl} target="_blank" rel="noreferrer">

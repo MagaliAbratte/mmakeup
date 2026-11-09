@@ -1,4 +1,4 @@
-import { getLandingPageData } from "@/lib/api/landing";
+import { landingPageData as data } from "@/content/landing";
 import { BookingSection } from "@/components/sections/booking-section";
 import { ContactSection } from "@/components/sections/contact-section";
 import { FinalGraphicSection } from "@/components/sections/final-graphic-section";
@@ -7,9 +7,7 @@ import { IntroSection } from "@/components/sections/intro-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { SiteFooter } from "@/components/layout/site-footer";
 
-export default async function HomePage() {
-  const data = await getLandingPageData();
-
+export default function HomePage() {
   return (
     <main className="min-h-screen bg-background">
       <HeroSection brand={data.brand} />

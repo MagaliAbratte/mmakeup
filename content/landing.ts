@@ -1,8 +1,3 @@
-export type NavigationItem = {
-  label: string;
-  href: string;
-};
-
 export type Service = {
   title: string;
   description: string;
@@ -17,7 +12,6 @@ export type Service = {
     requirementTitle?: string;
     requirement?: string;
     modalityTitle?: string;
-    modality?: string;
     modalityItems?: string[];
     ideal?: string;
     footer?: string[];
@@ -30,36 +24,17 @@ export type LandingPageData = {
     tagline: string;
     location: string;
   };
-  hero: {
-    title: string;
-    eyebrow: string;
-    subtitle: string;
-  };
-  editorial: {
-    eyebrow: string;
-    title: string;
-    description: string;
-    detail: string;
-  };
   services: Service[];
   booking: {
     title: string;
-    description: string;
     items: string[];
   };
-  testimonials: {
-    name: string;
-    text: string;
-    service: string;
-  }[];
   contact: {
     title: string;
     description: string;
     whatsappLabel: string;
     whatsappUrl: string;
-    phone: string;
     instagram: string;
-    address: string;
   };
 };
 
@@ -68,18 +43,6 @@ export const landingPageData: LandingPageData = {
     name: "Mmakeup",
     tagline: "Maquillaje Profesional",
     location: "Nueva Córdoba, Córdoba"
-  },
-  hero: {
-    title: "Maquillaje Profesional",
-    eyebrow: "Maquillaje Profesional",
-    subtitle: "Maquillaje social, novias, clases y producciones"
-  },
-  editorial: {
-    eyebrow: "Nueva Córdoba",
-    title: "Looks con presencia, piel cuidada y una experiencia pensada para vos.",
-    description:
-      "En Mmakeup cada servicio se trabaja desde la escucha, la técnica y una mirada editorial: acabados pulidos, piel protagonista y maquillaje que acompaña tu estilo sin disfrazarlo.",
-    detail: "Atención en estudio o a domicilio, con preparación personalizada para eventos, novias, clases y producciones."
   },
   services: [
     {
@@ -147,7 +110,6 @@ export const landingPageData: LandingPageData = {
       duration: "1 hs",
       studioPrice: "$60.000",
       details: {
-        intro: "Durante la prueba vemos juntas qué estilo te favorece más según tus facciones, tipo de piel, gustos, outfit y evento. Podemos probar tonos, intensidades y terminaciones hasta encontrar una propuesta con la que realmente te sientas cómoda.",
         itemsLabel: "El servicio incluye:",
         items: [
           "Prueba de maquillaje profesional y personalizada.",
@@ -163,9 +125,8 @@ export const landingPageData: LandingPageData = {
       duration: "+2 hs",
       studioPrice: "$80.000",
       homePrice: "$100.000",
-      note: "Grupales 10% off por persona",
       details: {
-        itemsLabel: "",
+        itemsLabel: "Vas a aprender:",
         items: [
           "Preparación de la piel antes del maquillaje.",
           "Técnicas prácticas para lograr maquillajes de día y de noche.",
@@ -178,7 +139,7 @@ export const landingPageData: LandingPageData = {
         modalityTitle: "Modalidad",
         modalityItems: [
           "Individual: 100% personalizada.",
-          "Grupal: hasta cuatro participantes, con un 10% de descuento por persona."
+          "Grupal: hasta cuatro participantes, la clase puede extenderse un poco más."
         ],
         footer: [
           "Durante la clase también vas a contar con maquillaje profesional, brochas, herramientas y productos complementarios para completar el paso a paso."
@@ -193,7 +154,6 @@ export const landingPageData: LandingPageData = {
   ],
   booking: {
     title: "Info de turnos y reservas",
-    description: " ",
     items: [
       "Agenda abierta todo el año.",
       "Seña del 25% para confirmar el turno.",
@@ -201,30 +161,11 @@ export const landingPageData: LandingPageData = {
       "Estudio en Nueva Córdoba.",
     ]
   },
-  testimonials: [
-    {
-      name: "Sofia R.",
-      service: "Maquillaje Social",
-      text: "Me senti super comoda durante todo el proceso y el maquillaje duro impecable toda la noche."
-    },
-    {
-      name: "Valentina M.",
-      service: "Maquillaje de Novia",
-      text: "Entendio exactamente el look que queria: natural, elegante y con presencia para las fotos."
-    },
-    {
-      name: "Camila P.",
-      service: "Automaquillaje",
-      text: "La clase fue clara, practica y sali con herramientas reales para maquillarme mejor todos los dias."
-    }
-  ],
   contact: {
     title: "¿Te gustaría que te maquille?",
     description: "Escribime por WhatsApp y vemos juntas tu idea.",
     whatsappLabel: "WhatsApp",
     whatsappUrl: "https://wa.me/5493563404877",
-    phone: "+54 9 3563 40-4877",
-    instagram: "@maguiabratte.makeup",
-    address: "Córdoba Capital"
+    instagram: "@maguiabratte.makeup"
   }
 };

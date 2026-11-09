@@ -14,7 +14,7 @@ export function IntroSection() {
             Maquillaje que resalta tu esencia.
           </h2>
           <p className="mx-auto mt-7 max-w-xl text-base leading-8 text-muted-foreground sm:text-lg">
-            Cada mujer es unica. Mi propósito es acompañarte a descubrir y potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión.
+            Te ayudo a potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión.
           </p>
           <Button
             asChild

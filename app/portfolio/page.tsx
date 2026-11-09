@@ -8,20 +8,14 @@ import { Button } from "@/components/ui/button";
 import { landingPageData } from "@/content/landing";
 
 const portfolioImages = [
-  { src: "/assets/work15.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 15" },
-  { src: "/assets/work16.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 16" },
   { src: "/assets/work1.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 1" },
   { src: "/assets/work3.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 3" },
   { src: "/assets/work4.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 4" },
   { src: "/assets/work5.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 5" },
-  { src: "/assets/work17.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 17" },
-  { src: "/assets/work18.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 18" },
   { src: "/assets/work6.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 6" },
   { src: "/assets/work8.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 8" },
   { src: "/assets/work9.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 9" },
-  { src: "/assets/work10.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 10" },
-  { src: "/assets/work12.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 12" },
-  { src: "/assets/work14.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 14" }
+  { src: "/assets/work10.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 10" }
 ];
 
 export default function PortfolioPage() {

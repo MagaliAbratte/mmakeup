@@ -1,4 +1,7 @@
 import type { LandingPageData } from "@/content/landing";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 type ServicesSectionProps = {
   services: LandingPageData["services"];
@@ -12,6 +15,17 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           <h2 className="text-balance text-5xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-7xl">
             Servicios
           </h2>
+        </div>
+
+        <div className="mx-auto mb-8 grid max-w-5xl gap-5 border border-border bg-muted/40 p-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:p-8">
+          <div>
+            <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-primary">Bridal Experience</p>
+            <h3 className="text-3xl font-semibold">Soy novia</h3>
+            <p className="mt-3 text-sm leading-7 text-muted-foreground">Una experiencia de belleza pensada para vos.</p>
+          </div>
+          <Button asChild className="h-auto min-h-[44px] whitespace-normal rounded-full px-6 text-center">
+            <Link href="/novias">Conocé la experiencia<ArrowRight className="ml-2 size-4 shrink-0" aria-hidden="true" /></Link>
+          </Button>
         </div>
 
         <div className="mx-auto max-w-5xl divide-y divide-border border-y border-border">

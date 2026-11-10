@@ -13,7 +13,7 @@ export function IntroSection() {
           <h2 className="text-balance text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl">
             Maquillaje que resalta tu esencia.
           </h2>
-          <p className="mx-auto mt-7 max-w-xl text-base leading-8 text-muted-foreground sm:text-lg">
+          <p className="mx-auto mt-7 max-w-xl text-sm italic leading-8 text-muted-foreground sm:text-base">
             Te ayudo a potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión.
           </p>
           <Button

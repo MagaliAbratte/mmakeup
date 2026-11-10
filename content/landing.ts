@@ -165,7 +165,7 @@ export const landingPageData: LandingPageData = {
     title: "¿Te gustaría que te maquille?",
     description: "Escribime por WhatsApp y vemos juntas tu idea.",
     whatsappLabel: "WhatsApp",
-    whatsappUrl: "https://wa.me/5493563404877",
+    whatsappUrl: `https://wa.me/5493563404877?text=${encodeURIComponent("Hola! quiero mas información sobre...")}`,
     instagram: "@maguiabratte.makeup"
   }
 };

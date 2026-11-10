@@ -9,12 +9,12 @@ export function IntroSection() {
   return (
     <section className="overflow-hidden bg-white pb-10 pt-2 sm:pb-14">
       <div className="grid items-center gap-3 pl-4 sm:gap-5 md:grid-cols-[minmax(0,1fr)_minmax(360px,46vw)] md:gap-12 md:pl-[max(2rem,calc((100vw-1200px)/2))]">
-        <div className="mx-auto max-w-2xl text-center md:mx-0">
+        <div className="mx-auto max-w-2xl pr-4 text-center md:mx-0 md:pr-0">
           <h2 className="text-balance text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl">
-            Maquillaje que resalta tu esencia.
+            Maquillaje que resalta tu esencia
           </h2>
-          <p className="mx-auto mt-7 max-w-xl text-sm italic leading-8 text-muted-foreground sm:text-base">
-            Te ayudo a potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión.
+          <p className="mx-auto mt-7 max-w-xl px-3 text-sm italic leading-8 text-muted-foreground sm:text-base">
+            Te ayudo a potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión
           </p>
           <Button
             asChild

@@ -17,7 +17,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           </h2>
         </div>
 
-        <div className="mx-auto mb-8 grid max-w-5xl gap-5 border border-border bg-muted/40 p-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:p-8">
+        <div className="mx-auto mb-8 grid max-w-5xl gap-5 rounded-2xl border border-border bg-muted/40 p-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:p-8">
           <div>
             <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-primary">Bridal Experience</p>
             <h3 className="text-3xl font-semibold">Soy novia</h3>
@@ -117,6 +117,18 @@ export function ServicesSection({ services }: ServicesSectionProps) {
               ) : null}
             </article>
           ))}
+        </div>
+
+        <div className="mt-9 text-center sm:mt-11">
+          <Button
+            asChild
+            className="rounded-full bg-primary px-7 text-primary-foreground shadow-none transition-all duration-500 hover:bg-primary/90 hover:px-8"
+          >
+            <Link href="/portfolio">
+              Mirá mi trabajo
+              <ArrowRight className="ml-2 size-4" aria-hidden="true" />
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

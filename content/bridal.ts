@@ -1,9 +1,9 @@
-import bridalImage from "@/public/assets/bridal-portrait.webp";
+import bridalImage from "@/public/assets/bridal.jpg";
 
 export type BridalProposal = {
   id: string;
   title: string;
-  description: string;
+  description?: string;
   studioPrice?: number;
   homePrice: number;
   benefits: string[];
@@ -53,7 +53,6 @@ export const bridalServices: BridalProposal[] = [
 export const bridalGroups: BridalProposal[] = [2, 4].map((guests) => ({
   id: `novia-${guests}-invitadas`,
   title: `Novia + ${guests} invitadas`,
-  description: "Para compartir la preparación con quienes más querés.",
   homePrice: guests === 2 ? 380000 : 550000,
   benefits: [
     "Maquillaje Novia Esencial a domicilio.",
@@ -68,11 +67,10 @@ export const bridalGroups: BridalProposal[] = [2, 4].map((guests) => ({
 
 export const bridalData = {
   title: "Bridal Experience",
-  subtitle: "Una experiencia de belleza pensada para vos.",
-  // Fotografía existente del portfolio. Reemplazar aquí por una foto bridal si se desea.
+  subtitle: "Una experiencia pensada para tu día más especial.",
   image: {
     src: bridalImage,
-    alt: "Detalle de maquillaje de ojos en tonos cálidos y labios brillantes realizado por M Makeup"
+    alt: "Retrato de perfil con maquillaje de novia en tonos naturales realizado por M Makeup"
   },
   intro: {
     title: "Tu día, tu esencia.",
@@ -100,12 +98,12 @@ export const bridalData = {
     }
   ],
   groups: {
-    title: "Compartí los preparativos",
+    title: "Momento compartido",
     paragraphs: [
       "Porque los momentos especiales también se disfrutan en compañía.",
-      "Podés prepararte junto a tus amigas, hermanas, madrinas o familiares con nuestros paquetes de maquillaje para novias e invitadas."
+      "Podés prepararte junto a tus amigas, hermanas, madrinas o familiares con mis propuestas de maquillaje para novias e invitadas."
     ],
-    note: "Los paquetes están sujetos a disponibilidad y coordinación previa de horarios. Para grupos más grandes, podemos organizar una propuesta personalizada."
+    note: "Los paquetes están sujetos a disponibilidad y coordinación previa de horarios. Para grupos más grandes, puedo organizar una propuesta personalizada."
   },
   differences: [
     { title: "Maquillaje personalizado", text: "Cada look se diseña teniendo en cuenta tu piel, tus facciones y tu estilo." },
@@ -120,15 +118,13 @@ export const bridalData = {
     "La prueba de maquillaje se realiza en estudio, preferentemente entre 4 y 6 semanas antes de la boda.",
     "Los servicios a domicilio están sujetos a disponibilidad y ubicación.",
     "Los desplazamientos fuera del área habitual pueden tener un costo adicional.",
-    "Los paquetes grupales requieren coordinación previa de horarios.",
-    "Los servicios de peinado no están incluidos.",
-    "Las condiciones de modificación, cancelación y reprogramación se informan al reservar."
+    "Los paquetes grupales requieren coordinación previa de horarios."
   ],
   contact: {
     title: "Hagamos realidad tu look.",
     text: "Me encantaría acompañarte en este momento y crear un maquillaje que te haga sentir vos misma, radiante y segura.",
     cta: "Consultar disponibilidad",
-    message: "¡Hola! Estoy organizando mi casamiento y me gustaría consultar disponibilidad para el servicio de maquillaje de novia."
+    message: "¡Hola! Estoy organizando mi casamiento y me gustaría conocer las opciones de maquillaje para novias y consultar disponibilidad."
   }
 };
 

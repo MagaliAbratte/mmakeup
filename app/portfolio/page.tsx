@@ -1,8 +1,7 @@
-import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft } from "lucide-react";
+import { Instagram } from "lucide-react";
 
-import logoImage from "@/app/assets/Logo2.png";
+import { PageHeader } from "@/components/layout/page-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Button } from "@/components/ui/button";
 import { landingPageData } from "@/content/landing";
@@ -20,51 +19,50 @@ const portfolioImages = [
   { src: "/assets/work10.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 10" }
 ];
 
+const instagramUrl = `https://instagram.com/${landingPageData.contact.instagram.replace("@", "")}`;
+
 export default function PortfolioPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <section className="animate-[fadeIn_700ms_ease-out] px-4 py-8 sm:px-6 sm:py-12">
-        <div className="container">
-          <div className="flex flex-col items-center gap-7 text-center">
-            <Link href="/" aria-label="Volver a Mmakeup" className="block">
-              <Image src={logoImage} alt="Mmakeup" priority className="h-auto w-56 sm:w-72" />
-            </Link>
+    <div className="min-h-screen bg-white">
+      <PageHeader backHref="/" backLabel="Volver al inicio" />
+      <main>
+        <section className="animate-[fadeIn_700ms_ease-out] px-4 py-8 sm:px-6 sm:py-12">
+          <div className="container">
+            <h1 className="mt-4 text-balance text-center text-4xl font-semibold leading-tight tracking-normal sm:text-6xl">
+              Portfolio
+            </h1>
 
-            <div>
-              <h1 className="mt-4 text-balance text-4xl font-semibold leading-tight tracking-normal sm:text-6xl">
-                Portfolio
-              </h1>
+            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {portfolioImages.map((image, index) => (
+                <div
+                  key={image.alt}
+                  className={index === 0 ? "overflow-hidden rounded-lg lg:col-span-2 lg:row-span-2" : "overflow-hidden rounded-lg"}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    loading={index === 0 ? "eager" : "lazy"}
+                    className="aspect-[4/5] h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
+                  />
+                </div>
+              ))}
             </div>
 
-            <Button
-              asChild
-              className="rounded-full bg-primary px-7 text-primary-foreground shadow-none transition-all duration-500 hover:bg-primary/90 hover:px-8"
-            >
-              <Link href="/">
-                <ArrowLeft className="mr-2 size-4" aria-hidden="true" />
-                Volver al inicio
-              </Link>
-            </Button>
+            <div className="mx-auto mt-14 max-w-xl border-t border-border pt-10 text-center">
+              <p className="text-balance text-xl font-medium leading-relaxed sm:text-2xl">
+                Hay mucha más inspiración en Instagram.
+              </p>
+              <Button asChild className="mt-6 h-auto min-h-[44px] max-w-full whitespace-normal rounded-full px-7 text-center">
+                <Link href={instagramUrl} target="_blank" rel="noreferrer">
+                  <Instagram className="mr-2 size-4 shrink-0" aria-hidden="true" />
+                  Ver más en Instagram
+                </Link>
+              </Button>
+            </div>
           </div>
-
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {portfolioImages.map((image, index) => (
-              <div
-                key={image.alt}
-                className={index === 0 ? "overflow-hidden rounded-lg lg:col-span-2 lg:row-span-2" : "overflow-hidden rounded-lg"}
-              >
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  loading={index === 0 ? "eager" : "lazy"}
-                  className="aspect-[4/5] h-full w-full object-cover transition duration-700 hover:scale-[1.03]"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+        </section>
+      </main>
       <SiteFooter brand={landingPageData.brand} contact={landingPageData.contact} />
-    </main>
+    </div>
   );
 }

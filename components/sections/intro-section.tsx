@@ -1,9 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
 
 import editorialImage from "@/app/assets/grafica2.jpeg";
-import { Button } from "@/components/ui/button";
 
 export function IntroSection() {
   return (
@@ -13,18 +10,9 @@ export function IntroSection() {
           <h2 className="text-balance text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl">
             Maquillaje que resalta tu esencia
           </h2>
-          <p className="mx-auto mt-7 max-w-xl px-3 text-sm italic leading-8 text-muted-foreground sm:text-base">
+          <p className="editorial-italic mx-auto mt-7 max-w-xl px-3 text-2xl font-medium leading-snug text-muted-foreground sm:text-3xl">
             Te ayudo a potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión
           </p>
-          <Button
-            asChild
-            className="mt-9 rounded-full bg-primary px-7 text-primary-foreground shadow-none transition-all duration-500 hover:bg-primary/90 hover:px-8"
-          >
-            <Link href="/portfolio">
-              Mirá mi trabajo
-              <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-            </Link>
-          </Button>
         </div>
 
         <div className="relative flex justify-end overflow-visible">

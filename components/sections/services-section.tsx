@@ -1,7 +1,6 @@
 import type { LandingPageData } from "@/content/landing";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 type ServicesSectionProps = {
   services: LandingPageData["services"];
@@ -17,18 +16,18 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           </h2>
         </div>
 
-        <div className="mx-auto mb-8 grid max-w-5xl gap-4 rounded-2xl bg-bridal-rose/20 px-6 py-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:px-8 sm:py-6">
-          <div>
-            <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-primary">Bridal Experience</p>
-            <h3 className="text-3xl font-semibold">Soy novia</h3>
-            <p className="mt-3 text-sm leading-7 text-muted-foreground">Una experiencia de belleza pensada para vos.</p>
-          </div>
-          <Button asChild className="h-auto min-h-[44px] whitespace-normal rounded-full px-6 text-center">
-            <Link href="/novias">Conocé la experiencia<ArrowRight className="ml-2 size-4 shrink-0" aria-hidden="true" /></Link>
-          </Button>
-        </div>
-
         <div className="mx-auto max-w-5xl divide-y divide-border border-y border-border">
+          <article>
+            <Link href="/novias" className="group grid gap-5 py-6 transition-all duration-500 ease-out hover:bg-muted/35 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-start sm:px-5 sm:hover:px-7">
+              <div className="transition-transform duration-500 ease-out group-hover:translate-x-1">
+                <h3 className="text-2xl font-semibold leading-tight text-foreground sm:text-3xl">Soy novia</h3>
+                <p className="mt-3 max-w-2xl text-sm leading-7 text-muted-foreground transition-colors duration-500 group-hover:text-foreground/72">Una experiencia de belleza pensada para vos.</p>
+              </div>
+              <span className="inline-flex items-center text-sm font-semibold text-bridal-rose transition-all duration-500 ease-out group-hover:translate-x-1 group-hover:text-foreground">
+                Conocé la experiencia<ArrowRight className="ml-2 size-4 shrink-0" aria-hidden="true" />
+              </span>
+            </Link>
+          </article>
           {services.map((service) => (
             <article
               key={service.title}

@@ -3,6 +3,7 @@ import bridalImage from "@/public/assets/bridal.jpg";
 export type BridalProposal = {
   id: string;
   title: string;
+  duration: string;
   description?: string;
   studioPrice?: number;
   homePrice: number;
@@ -17,6 +18,7 @@ export const bridalServices: BridalProposal[] = [
   {
     id: "esencial",
     title: "Novia Esencial",
+    duration: "1 hs",
     description: "Un maquillaje pensado para reflejar tu estilo y acompañarte durante todo tu día.",
     studioPrice: 180000,
     homePrice: 200000,
@@ -33,6 +35,7 @@ export const bridalServices: BridalProposal[] = [
   {
     id: "signature",
     title: "Novia Signature",
+    duration: "1 hs 30 m",
     description: "Una experiencia más completa para disfrutar de cada detalle de tus preparativos.",
     homePrice: 250000,
     includes: "Incluye todo lo de Novia Esencial, más:",
@@ -53,6 +56,7 @@ export const bridalServices: BridalProposal[] = [
 export const bridalGroups: BridalProposal[] = [2, 4].map((guests) => ({
   id: `novia-${guests}-invitadas`,
   title: `Novia + ${guests} invitadas`,
+  duration: guests === 2 ? "3 hs 30 m" : "5 hs 30 m",
   homePrice: guests === 2 ? 380000 : 550000,
   benefits: [
     "Maquillaje Novia Esencial a domicilio.",

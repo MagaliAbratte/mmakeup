@@ -9,7 +9,7 @@ export function BookingPreview({ title }: { title: string }) {
       <div className="container">
         <div className="mx-auto grid max-w-5xl gap-5 rounded-2xl bg-bridal-rose/20 p-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:p-8">
           <h2 id="booking-preview-title" className="text-2xl font-semibold">{title}</h2>
-            <Button asChild className="h-auto min-h-[44px] whitespace-normal rounded-full border border-border bg-white px-6 text-center text-foreground hover:bg-muted">
+            <Button asChild className="h-auto min-h-[44px] whitespace-normal rounded-full px-6 text-center">
               <Link href="/reservas">
                 Ver reservas y condiciones
                 <ArrowRight className="ml-2 size-4 shrink-0" aria-hidden="true" />

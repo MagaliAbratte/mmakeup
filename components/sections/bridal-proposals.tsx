@@ -12,6 +12,10 @@ function ProposalCard({ proposal }: {
       <h3 id={`${proposal.id}-title`} className="text-2xl font-semibold leading-tight sm:text-3xl">{proposal.title}</h3>
       {proposal.description && <p className="mt-4 text-sm leading-7 text-muted-foreground">{proposal.description}</p>}
       <dl className="my-6 space-y-2 border-y border-border py-5 text-sm text-muted-foreground">
+        <div>
+          <dt className="sr-only">Duración</dt>
+          <dd className="font-medium uppercase tracking-[0.14em] text-foreground">{proposal.duration}</dd>
+        </div>
         {proposal.studioPrice !== undefined && (
           <div className="flex flex-wrap items-baseline gap-x-2">
             <dt className="font-semibold text-foreground">En estudio</dt>

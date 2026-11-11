@@ -12,7 +12,7 @@ export function BehindTheBrushesPreview() {
           <div>
             <h2 id="behind-the-brushes-preview-title" className="text-2xl font-semibold">{content.title}</h2>
           </div>
-            <Button asChild className="h-auto min-h-[44px] whitespace-normal rounded-full border border-border bg-white px-6 text-center text-foreground hover:bg-muted">
+            <Button asChild className="h-auto min-h-[44px] whitespace-normal rounded-full px-6 text-center">
               <Link href="/detras-de-las-brochas">
                 {content.previewLabel}
                 <ArrowRight className="ml-2 size-4 shrink-0" aria-hidden="true" />

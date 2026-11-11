@@ -65,7 +65,7 @@ export default function BridalPage() {
             <h2 id="experiencia-title" className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">Nuestra experiencia</h2>
             <div className="mt-8 grid gap-8 md:grid-cols-2 md:gap-12">
               {data.experience.map((moment) => (
-                <article key={moment.title} className="border-t border-border pt-6">
+                <article key={moment.title} className="border-t border-accent-red/60 pt-6">
                   <h3 className="text-2xl font-semibold">{moment.title}</h3>
                   <div className="mt-5 space-y-4 text-sm leading-7 text-muted-foreground">
                     {moment.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}

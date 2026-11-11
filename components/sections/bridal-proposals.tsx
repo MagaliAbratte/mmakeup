@@ -43,7 +43,7 @@ export function BridalProposals() {
   return (
     <>
       <section id="propuestas" aria-labelledby="propuestas-title" className="container max-w-5xl py-10 sm:py-14">
-        <h2 id="propuestas-title" className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">Servicios para novias</h2>
+        <h2 id="propuestas-title" className="text-balance text-4xl font-semibold leading-tight text-accent-red sm:text-5xl">Servicios para novias</h2>
         <div className="mt-7 grid gap-5 md:grid-cols-2">
           {bridalServices.map((proposal) => <ProposalCard key={proposal.id} proposal={proposal} />)}
         </div>
@@ -63,7 +63,7 @@ export function BridalProposals() {
       </section>
 
       <section aria-labelledby="diferenciales-title" className="container max-w-5xl py-10 sm:py-14">
-        <h2 id="diferenciales-title" className="max-w-3xl text-balance text-4xl font-semibold leading-tight sm:text-5xl">Detalles que hacen la diferencia</h2>
+        <h2 id="diferenciales-title" className="max-w-3xl text-balance text-4xl font-semibold leading-tight text-accent-red sm:text-5xl">Detalles que hacen la diferencia</h2>
         <div className="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2">
           {bridalData.differences.map((item) => (
             <article key={item.title} className="border-t border-border pt-5">

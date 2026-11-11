@@ -8,7 +8,9 @@
   :root {
     --background: 0 0% 100%;
     --foreground: 20 14% 7%;
-    --primary: 345 100% 42%;
+    --accent-red: 345 100% 42%;
+    --bridal-rose: 338 25% 43%;
+    --primary: var(--accent-red);
     --primary-foreground: 0 0% 100%;
     --muted: 0 0% 94%;
     --muted-foreground: 18 8% 38%;
@@ -54,8 +56,8 @@ html {
 }
 
 .bridal-page {
-  --primary: 338 25% 43%;
-  --ring: 338 25% 43%;
+  --primary: var(--bridal-rose);
+  --ring: var(--bridal-rose);
 }
 
 .editorial-italic,

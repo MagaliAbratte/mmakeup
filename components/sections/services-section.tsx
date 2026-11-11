@@ -68,7 +68,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
 
               {service.details ? (
                 <details className="group/details max-w-2xl text-sm leading-6 text-muted-foreground sm:col-span-2">
-                  <summary className="cursor-pointer list-none font-semibold text-primary transition-colors hover:text-foreground">
+                  <summary className="cursor-pointer list-none font-semibold text-bridal-rose transition-colors hover:text-foreground">
                     <span className="group-open/details:hidden">Ver más info</span>
                     <span className="hidden group-open/details:inline">Ocultar info</span>
                   </summary>

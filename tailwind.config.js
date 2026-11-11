@@ -16,6 +16,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        "bridal-rose": "hsl(var(--bridal-rose) / <alpha-value>)",
+        "accent-red": "hsl(var(--accent-red) / <alpha-value>)",
         border: "hsl(var(--border))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",

@@ -1,21 +1,14 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-
 export function BookingPreview({ title }: { title: string }) {
   return (
-    <section id="reservas" aria-labelledby="booking-preview-title" className="bg-white py-3 sm:py-16">
+    <section id="reservas" aria-labelledby="booking-preview-title" className="bg-white pt-3 sm:pt-8">
       <div className="container">
-        <div className="mx-auto grid max-w-5xl gap-5 rounded-2xl bg-bridal-rose/20 p-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:p-8">
+        <Link href="/reservas" className="group mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-4 border-y border-border py-6 transition-all duration-500 hover:bg-muted/35 sm:px-5 sm:hover:px-7">
           <h2 id="booking-preview-title" className="text-2xl font-semibold">{title}</h2>
-            <Button asChild className="h-auto min-h-[44px] whitespace-normal rounded-full px-6 text-center">
-              <Link href="/reservas">
-                Ver reservas y condiciones
-                <ArrowRight className="ml-2 size-4 shrink-0" aria-hidden="true" />
-              </Link>
-            </Button>
-        </div>
+          <span className="inline-flex min-h-[44px] items-center rounded-full bg-primary px-6 text-sm font-medium text-primary-foreground transition-colors group-hover:bg-primary/90">Ver reservas y condiciones<ArrowRight className="ml-2 size-4 shrink-0" aria-hidden="true" /></span>
+        </Link>
       </div>
     </section>
   );

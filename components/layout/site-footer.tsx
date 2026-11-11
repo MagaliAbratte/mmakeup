@@ -7,9 +7,10 @@ import type { LandingPageData } from "@/content/landing";
 type SiteFooterProps = {
   brand: LandingPageData["brand"];
   contact: LandingPageData["contact"];
+  showWhatsApp?: boolean;
 };
 
-export function SiteFooter({ brand, contact }: SiteFooterProps) {
+export function SiteFooter({ brand, contact, showWhatsApp = true }: SiteFooterProps) {
   const year = new Date().getFullYear();
 
   return (
@@ -27,9 +28,11 @@ export function SiteFooter({ brand, contact }: SiteFooterProps) {
         </div>
 
         <div className="flex flex-wrap justify-center gap-4 sm:justify-start">
-          <Link href={contact.whatsappUrl} target="_blank" rel="noreferrer" className="transition hover:text-primary">
-            WhatsApp
-          </Link>
+          {showWhatsApp && (
+            <Link href={contact.whatsappUrl} target="_blank" rel="noreferrer" className="transition hover:text-primary">
+              WhatsApp
+            </Link>
+          )}
           <Link href={`https://instagram.com/${contact.instagram.replace("@", "")}`} target="_blank" rel="noreferrer" className="transition hover:text-primary">
             Instagram
           </Link>

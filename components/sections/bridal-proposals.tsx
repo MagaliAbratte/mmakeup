@@ -24,7 +24,7 @@ function ProposalCard({ proposal }: {
         </div>
       </dl>
       <p className="mb-3 text-sm font-semibold">{proposal.includes ?? "El servicio incluye:"}</p>
-      <ul className="list-disc space-y-3 pl-4 text-sm leading-6 text-muted-foreground marker:text-primary">
+      <ul className="list-disc space-y-3 pl-4 text-sm leading-6 text-muted-foreground marker:text-accent-red">
         {proposal.benefits.map((benefit) => <li key={benefit}>{benefit}</li>)}
       </ul>
       {proposal.note && <p className="mt-5 text-sm leading-6 text-muted-foreground">{proposal.note}</p>}
@@ -43,7 +43,7 @@ export function BridalProposals() {
   return (
     <>
       <section id="propuestas" aria-labelledby="propuestas-title" className="container max-w-5xl py-10 sm:py-14">
-        <h2 id="propuestas-title" className="text-balance text-4xl font-semibold leading-tight text-accent-red sm:text-5xl">Servicios para novias</h2>
+        <h2 id="propuestas-title" className="text-balance text-4xl font-semibold leading-tight text-bridal-rose sm:text-5xl">Servicios para novias</h2>
         <div className="mt-7 grid gap-5 md:grid-cols-2">
           {bridalServices.map((proposal) => <ProposalCard key={proposal.id} proposal={proposal} />)}
         </div>
@@ -63,7 +63,7 @@ export function BridalProposals() {
       </section>
 
       <section aria-labelledby="diferenciales-title" className="container max-w-5xl py-10 sm:py-14">
-        <h2 id="diferenciales-title" className="max-w-3xl text-balance text-4xl font-semibold leading-tight text-accent-red sm:text-5xl">Detalles que hacen la diferencia</h2>
+        <h2 id="diferenciales-title" className="max-w-3xl text-balance text-4xl font-semibold leading-tight text-bridal-rose sm:text-5xl">Detalles que hacen la diferencia</h2>
         <div className="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2">
           {bridalData.differences.map((item) => (
             <article key={item.title} className="border-t border-border pt-5">
@@ -77,7 +77,7 @@ export function BridalProposals() {
       <section id="condiciones" aria-labelledby="condiciones-title" className="container max-w-5xl pb-10 sm:pb-14">
         <div className="border-y border-border py-7">
           <h2 id="condiciones-title" className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">Reservas y condiciones</h2>
-          <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-muted-foreground">
+          <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-muted-foreground marker:text-accent-red">
             {bridalData.conditions.map((condition) => <li key={condition}>{condition}</li>)}
           </ul>
         </div>

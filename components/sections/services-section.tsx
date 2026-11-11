@@ -62,7 +62,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
                     {service.note ? <p className="mt-2 font-semibold text-primary">{service.note}</p> : null}
                   </>
                 ) : (
-                  <p className="font-semibold text-primary">{service.duration}</p>
+                  <p className="font-semibold text-bridal-rose">{service.duration}</p>
                 )}
               </div>
 

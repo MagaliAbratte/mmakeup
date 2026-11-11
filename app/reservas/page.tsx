@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { PageHeader } from "@/components/layout/page-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { BookingSection } from "@/components/sections/booking-section";
-import { ContactSection } from "@/components/sections/contact-section";
 import { landingPageData as data } from "@/content/landing";
 
 export const metadata: Metadata = {
@@ -17,9 +16,8 @@ export default function BookingPage() {
       <PageHeader backHref="/" backLabel="Volver al inicio" />
       <main>
         <BookingSection booking={data.booking} />
-        <ContactSection contact={data.contact} buttonOnly />
       </main>
-      <SiteFooter brand={data.brand} contact={data.contact} />
+      <SiteFooter brand={data.brand} contact={data.contact} showWhatsApp={false} />
     </div>
   );
 }

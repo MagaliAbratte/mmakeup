@@ -119,17 +119,6 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           ))}
         </div>
 
-        <div className="mt-9 text-center sm:mt-11">
-          <Button
-            asChild
-            className="rounded-full bg-primary px-7 text-primary-foreground shadow-none transition-all duration-500 hover:bg-primary/90 hover:px-8"
-          >
-            <Link href="/portfolio">
-              Mirá mi trabajo
-              <ArrowRight className="ml-2 size-4" aria-hidden="true" />
-            </Link>
-          </Button>
-        </div>
       </div>
     </section>
   );

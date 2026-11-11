@@ -1,5 +1,6 @@
 import { landingPageData as data } from "@/content/landing";
-import { BookingSection } from "@/components/sections/booking-section";
+import { BookingPreview } from "@/components/sections/booking-preview";
+import { BehindTheBrushesPreview } from "@/components/sections/behind-the-brushes-preview";
 import { ContactSection } from "@/components/sections/contact-section";
 import { FinalGraphicSection } from "@/components/sections/final-graphic-section";
 import { HeroSection } from "@/components/sections/hero-section";
@@ -13,7 +14,8 @@ export default function HomePage() {
       <HeroSection brand={data.brand} />
       <IntroSection />
       <ServicesSection services={data.services} />
-      <BookingSection booking={data.booking} />
+      <BookingPreview title={data.booking.title} />
+      <BehindTheBrushesPreview />
       <ContactSection contact={data.contact} />
       <FinalGraphicSection />
       <SiteFooter brand={data.brand} contact={data.contact} />

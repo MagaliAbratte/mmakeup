@@ -153,11 +153,14 @@ export const landingPageData: LandingPageData = {
     }
   ],
   booking: {
-    title: "Info de turnos y reservas",
+    title: "Reservas y condiciones",
     items: [
       "Agenda abierta todo el año.",
       "Seña del 25% para confirmar el turno.",
       "Se recomienda reservar con al menos 1 mes de anticipación. Tambien podes consultar disponibilidad sobre la fecha.",
+      "Las pruebas de maquillaje se realizan en estudio, preferentemente entre 2 y 4 semanas antes del evento.",
+      "Los servicios a domicilio están sujetos a disponibilidad y ubicación.",
+      "Los desplazamientos fuera del anillo de circunvalación de Córdoba pueden tener un costo adicional.",
       "Estudio en Nueva Córdoba.",
     ]
   },

@@ -113,7 +113,7 @@ export const bridalData = {
   ],
   // Condiciones iniciales: editar aquí sin modificar los servicios generales.
   conditions: [
-    "La fecha se confirma mediante una seña del 30% del servicio contratado.",
+    "La fecha se confirma mediante una seña del 25% del servicio contratado.",
     "El saldo restante se abona antes del evento, en la fecha acordada.",
     "La prueba de maquillaje se realiza en estudio, preferentemente entre 4 y 6 semanas antes de la boda.",
     "Los servicios a domicilio están sujetos a disponibilidad y ubicación.",

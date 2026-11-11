@@ -23,7 +23,6 @@ export const bridalServices: BridalProposal[] = [
     benefits: [
       "Asesoramiento previo y selección de referencias.",
       "Prueba de maquillaje en estudio.",
-      "Análisis de piel, facciones y estilo.",
       "Preparación de piel personalizada.",
       "Maquillaje completo de larga duración.",
       "Pestañas individuales incluidas."
@@ -39,10 +38,11 @@ export const bridalServices: BridalProposal[] = [
     includes: "Incluye todo lo de Novia Esencial, más:",
     benefits: [
       "Ritual de preparación premium de piel y labios.",
-      "Hidratación especial del contorno de ojos.",
+      "Hidratación del contorno de ojos con pads de gel.",
+      "Retoque de cejas.",
       "Preparación e iluminación de escote, hombros o espalda, según el look.",
       "Kit de retoque para llevar.",
-      "Acompañamiento final de hasta 30 minutos, previo a la salida."
+      "Acompañamiento final de hasta 30 minutos previo a la salida."
     ],
     note: "La permanencia incluida es de hasta 30 minutos después de finalizar el maquillaje, para los últimos detalles antes de salir. No incluye acompañamiento durante la boda.",
     cta: "Consultar disponibilidad",
@@ -117,7 +117,7 @@ export const bridalData = {
     "El saldo restante se abona antes del evento, en la fecha acordada.",
     "La prueba de maquillaje se realiza en estudio, preferentemente entre 4 y 6 semanas antes de la boda.",
     "Los servicios a domicilio están sujetos a disponibilidad y ubicación.",
-    "Los desplazamientos fuera del área habitual pueden tener un costo adicional.",
+    "Los desplazamientos fuera del anillo de circunvalación de Córdoba pueden tener un costo adicional.",
     "Los paquetes grupales requieren coordinación previa de horarios."
   ],
   contact: {

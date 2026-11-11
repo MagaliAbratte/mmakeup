@@ -9,7 +9,7 @@ type ServicesSectionProps = {
 
 export function ServicesSection({ services }: ServicesSectionProps) {
   return (
-    <section id="servicios" className="bg-white py-12 sm:py-16">
+    <section id="servicios" className="bg-white pb-12 pt-6 sm:py-16">
       <div className="container">
         <div className="mb-9 max-w-4xl text-center sm:mx-auto sm:mb-11">
           <h2 className="text-balance text-5xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-7xl">
@@ -17,7 +17,7 @@ export function ServicesSection({ services }: ServicesSectionProps) {
           </h2>
         </div>
 
-        <div className="mx-auto mb-8 grid max-w-5xl gap-5 rounded-2xl border border-border bg-muted/40 p-6 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:p-8">
+        <div className="mx-auto mb-8 grid max-w-5xl gap-4 rounded-2xl bg-bridal-rose/20 px-6 py-4 sm:grid-cols-[minmax(0,1fr)_auto] sm:items-center sm:px-8 sm:py-6">
           <div>
             <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-primary">Bridal Experience</p>
             <h3 className="text-3xl font-semibold">Soy novia</h3>

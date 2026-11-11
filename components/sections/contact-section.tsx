@@ -18,18 +18,18 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export function ContactSection({ contact, buttonOnly = false }: ContactSectionProps) {
   return (
-    <section id="contacto" className="bg-white px-3 pb-0 pt-6 sm:px-5 sm:pb-2 sm:pt-10">
-      <div className={buttonOnly ? "container px-5 pb-8 text-center sm:px-10 sm:pb-12" : "container px-5 pb-6 pt-10 text-center sm:px-10 sm:pb-8 sm:pt-14"}>
+    <section id="contacto" className="bg-white px-3 pb-0 pt-3 sm:px-5 sm:pb-2 sm:pt-10">
+      <div className={buttonOnly ? "container px-5 pb-8 text-center sm:px-10 sm:pb-12" : "container px-5 pb-4 pt-6 text-center sm:px-10 sm:pb-8 sm:pt-14"}>
         {!buttonOnly && <>
         <h2 className="mx-auto max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-normal sm:text-6xl">
           {contact.title}
         </h2>
-        <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-muted-foreground">{contact.description}</p>
+        <p className="mx-auto mt-4 max-w-xl text-base leading-8 text-muted-foreground sm:mt-6">{contact.description}</p>
         </>}
 
         <Button
           asChild
-          className={`${buttonOnly ? "" : "mt-9 "}rounded-full bg-[#25D366] px-7 text-[#063b1c] shadow-none transition-all duration-500 hover:bg-[#20bd5a] hover:px-8 focus-visible:ring-[#128c7e]`}
+          className={`${buttonOnly ? "" : "mt-6 sm:mt-9 "}rounded-full bg-[#25D366] px-7 text-[#063b1c] shadow-none transition-all duration-500 hover:bg-[#20bd5a] hover:px-8 focus-visible:ring-[#128c7e]`}
         >
           <Link href={contact.whatsappUrl} target="_blank" rel="noreferrer">
             <WhatsAppIcon className="mr-2 size-4" />

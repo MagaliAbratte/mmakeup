@@ -25,7 +25,7 @@ export default function BridalPage() {
       <PageHeader backHref="/" backLabel="Volver a home" />
 
       <main id="bridal-content">
-        <div className="relative h-[62svh] min-h-[380px] overflow-hidden bg-muted sm:h-[72vh]">
+        <div className="relative h-[62svh] min-h-[380px] overflow-hidden bg-muted sm:h-[72vh] lg:hidden">
           <Image
             src={data.image.src}
             alt={data.image.alt}
@@ -38,7 +38,7 @@ export default function BridalPage() {
           <div className="pointer-events-none absolute inset-x-0 bottom-0 h-44 bg-gradient-to-b from-white/0 via-white/75 to-white sm:h-56" />
         </div>
 
-        <section aria-labelledby="bridal-title" className="container relative -mt-10 max-w-5xl pb-10 text-center sm:-mt-12 sm:pb-14">
+        <section aria-labelledby="bridal-title" className="container relative -mt-10 max-w-5xl pb-10 text-center sm:-mt-12 sm:pb-14 lg:pb-8 lg:mt-0 lg:pt-4">
           <h1 id="bridal-title" className="text-balance text-5xl font-semibold leading-[1.05] sm:text-7xl lg:text-8xl">{data.title}</h1>
           <p className="mt-4 text-base leading-7 text-muted-foreground sm:text-lg">{data.subtitle}</p>
           <Button asChild className="mt-6 h-auto min-h-[44px] max-w-full whitespace-normal rounded-full px-6">
@@ -51,7 +51,7 @@ export default function BridalPage() {
           </nav>
         </section>
 
-        <section aria-labelledby="esencia-title" className="container max-w-3xl pb-10 sm:pb-14">
+        <section aria-labelledby="esencia-title" className="container max-w-3xl pb-10 sm:pb-14 lg:pb-8">
           <div>
             <h2 id="esencia-title" className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">{data.intro.title}</h2>
             <div className="mt-5 space-y-4 text-sm leading-8 text-muted-foreground sm:text-base">
@@ -60,7 +60,7 @@ export default function BridalPage() {
           </div>
         </section>
 
-        <section id="experiencia" aria-labelledby="experiencia-title" className="bg-muted/40 py-10 sm:py-14">
+        <section id="experiencia" aria-labelledby="experiencia-title" className="bg-muted/40 py-10 sm:py-14 lg:py-9">
           <div className="container max-w-5xl">
             <h2 id="experiencia-title" className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">Nuestra experiencia</h2>
             <div className="mt-8 grid gap-8 md:grid-cols-2 md:gap-12">

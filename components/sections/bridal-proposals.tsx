@@ -46,14 +46,14 @@ function ProposalCard({ proposal }: {
 export function BridalProposals() {
   return (
     <>
-      <section id="propuestas" aria-labelledby="propuestas-title" className="container max-w-5xl py-10 sm:py-14">
+      <section id="propuestas" aria-labelledby="propuestas-title" className="container max-w-5xl py-10 sm:py-14 lg:py-9">
         <h2 id="propuestas-title" className="text-balance text-4xl font-semibold leading-tight text-bridal-rose sm:text-5xl">Servicios para novias</h2>
         <div className="mt-7 grid gap-5 md:grid-cols-2">
           {bridalServices.map((proposal) => <ProposalCard key={proposal.id} proposal={proposal} />)}
         </div>
       </section>
 
-      <section id="grupos" aria-labelledby="grupos-title" className="bg-muted/40 py-10 sm:py-14">
+      <section id="grupos" aria-labelledby="grupos-title" className="bg-muted/40 py-10 sm:py-14 lg:py-9">
         <div className="container max-w-5xl">
           <h2 id="grupos-title" className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">{bridalData.groups.title}</h2>
           <div className="mt-6 max-w-2xl space-y-3 text-sm leading-7 text-muted-foreground sm:text-base">
@@ -66,7 +66,7 @@ export function BridalProposals() {
         </div>
       </section>
 
-      <section aria-labelledby="diferenciales-title" className="container max-w-5xl py-10 sm:py-14">
+      <section aria-labelledby="diferenciales-title" className="container max-w-5xl py-10 sm:py-14 lg:py-9">
         <h2 id="diferenciales-title" className="max-w-3xl text-balance text-4xl font-semibold leading-tight text-bridal-rose sm:text-5xl">Detalles que hacen la diferencia</h2>
         <div className="mt-8 grid gap-x-10 gap-y-8 sm:grid-cols-2">
           {bridalData.differences.map((item) => (
@@ -78,7 +78,7 @@ export function BridalProposals() {
         </div>
       </section>
 
-      <section id="condiciones" aria-labelledby="condiciones-title" className="container max-w-5xl pb-10 sm:pb-14">
+      <section id="condiciones" aria-labelledby="condiciones-title" className="container max-w-5xl pb-10 sm:pb-14 lg:pb-9">
         <div className="border-y border-border py-7">
           <h2 id="condiciones-title" className="text-balance text-4xl font-semibold leading-tight sm:text-5xl">Reservas y condiciones</h2>
           <ul className="mt-5 list-disc space-y-3 pl-5 text-sm leading-7 text-muted-foreground marker:text-accent-red">
@@ -87,7 +87,7 @@ export function BridalProposals() {
         </div>
       </section>
 
-      <section aria-labelledby="bridal-contact-title" className="bg-muted/40 py-10 text-center sm:py-14">
+      <section aria-labelledby="bridal-contact-title" className="bg-muted/40 py-10 text-center sm:py-14 lg:py-9">
         <div className="container max-w-3xl">
           <h2 id="bridal-contact-title" className="text-balance text-4xl font-semibold leading-tight sm:text-6xl">{bridalData.contact.title}</h2>
           <p className="mx-auto mt-6 max-w-xl text-base leading-8 text-muted-foreground">{bridalData.contact.text}</p>

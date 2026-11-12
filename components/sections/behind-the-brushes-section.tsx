@@ -12,9 +12,9 @@ export function BehindTheBrushesSection() {
     <section
       id="detras-de-las-brochas"
       aria-labelledby="detras-de-las-brochas-title"
-      className="bg-white pb-12 sm:pb-16"
+      className="bg-white pb-12 sm:pb-16 lg:pb-10"
     >
-          <div className="relative h-[62svh] min-h-[380px] w-full overflow-hidden bg-muted sm:h-[72vh]">
+          <div className="relative h-[62svh] min-h-[380px] w-full overflow-hidden bg-muted sm:h-[72vh] lg:hidden">
             <Image
               src={portrait}
               alt={content.imageAlt}
@@ -27,12 +27,16 @@ export function BehindTheBrushesSection() {
             <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 bottom-0 h-44 bg-gradient-to-b from-white/0 via-white/75 to-white sm:h-56" />
           </div>
 
-      <div className="container relative -mt-10 max-w-3xl sm:-mt-12">
-        <div className="space-y-9 sm:space-y-12">
+      <div className="container relative -mt-10 max-w-3xl sm:-mt-12 lg:mt-0 lg:max-w-5xl lg:pt-4">
+        <div className="space-y-9 sm:space-y-12 lg:space-y-8">
+          <div className="lg:grid lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:items-start lg:gap-12">
+            <div className="relative hidden aspect-[4/5] overflow-hidden bg-muted lg:block">
+              <Image src={portrait} alt={content.imageAlt} fill sizes="(min-width: 1024px) 40vw, 100vw" className="object-cover object-[center_35%]" />
+            </div>
           <div className="min-w-0">
             <h1
               id="detras-de-las-brochas-title"
-              className="text-balance text-center text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl"
+              className="text-balance text-center text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl lg:text-left"
             >
               {content.title}
             </h1>
@@ -42,7 +46,7 @@ export function BehindTheBrushesSection() {
               ))}
             </div>
 
-            <div className="relative left-1/2 my-6 flex w-screen -translate-x-1/2 justify-end sm:my-8">
+            <div className="relative left-1/2 my-6 flex w-screen -translate-x-1/2 justify-end sm:my-8 lg:hidden">
               <Image
                 src={mascaraGraphic}
                 alt=""
@@ -59,6 +63,8 @@ export function BehindTheBrushesSection() {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
+
+          </div>
 
           </div>
 

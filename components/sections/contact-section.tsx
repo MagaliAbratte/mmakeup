@@ -18,8 +18,8 @@ function WhatsAppIcon({ className }: { className?: string }) {
 
 export function ContactSection({ contact, buttonOnly = false }: ContactSectionProps) {
   return (
-    <section id="contacto" className="bg-white px-3 pb-0 pt-3 sm:px-5 sm:pb-2 sm:pt-10">
-      <div className={buttonOnly ? "container px-5 pb-8 text-center sm:px-10 sm:pb-12" : "container px-5 pb-4 pt-6 text-center sm:px-10 sm:pb-8 sm:pt-14"}>
+    <section id="contacto" className="bg-white px-3 pb-0 pt-3 sm:px-5 sm:pb-2 sm:pt-10 lg:pt-2">
+      <div className={buttonOnly ? "container px-5 pb-8 text-center sm:px-10 sm:pb-12" : "container px-5 pb-4 pt-6 text-center sm:px-10 sm:pb-8 lg:pb-4 sm:pt-14 lg:pt-6"}>
         {!buttonOnly && <>
         <h2 className="mx-auto max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-normal sm:text-6xl">
           {contact.title}

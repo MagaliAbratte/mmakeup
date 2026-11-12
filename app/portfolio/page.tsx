@@ -26,13 +26,13 @@ export default function PortfolioPage() {
     <div className="min-h-screen bg-white">
       <PageHeader backHref="/" backLabel="Volver al inicio" />
       <main>
-        <section className="animate-[fadeIn_700ms_ease-out] px-4 py-8 sm:px-6 sm:py-12">
+        <section className="animate-[fadeIn_700ms_ease-out] px-4 py-8 sm:px-6 sm:py-12 lg:py-8">
           <div className="container">
             <h1 className="mt-4 text-balance text-center text-4xl font-semibold leading-tight tracking-normal sm:text-6xl">
               Portfolio
             </h1>
 
-            <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-12 grid lg:mt-8 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {portfolioImages.map((image, index) => (
                 <div
                   key={image.alt}
@@ -48,7 +48,7 @@ export default function PortfolioPage() {
               ))}
             </div>
 
-            <div className="mx-auto mt-14 max-w-xl border-t border-border pt-10 text-center">
+            <div className="mx-auto mt-14 max-w-xl lg:mt-9 border-t border-border pt-10 text-center lg:pt-7">
               <p className="text-balance text-xl font-medium leading-relaxed sm:text-2xl">
                 Hay mucha más inspiración en Instagram.
               </p>

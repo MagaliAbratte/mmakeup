@@ -9,9 +9,9 @@ type BookingSectionProps = {
 
 export function BookingSection({ booking }: BookingSectionProps) {
   return (
-    <section id="reservas" className="bg-white py-12 sm:py-16">
+    <section id="reservas" className="bg-white py-12 sm:py-16 lg:py-10">
       <div className="container">
-        <div className="mb-9 max-w-4xl text-center sm:mx-auto sm:mb-11">
+        <div className="mb-9 max-w-4xl text-center sm:mx-auto sm:mb-11 lg:mb-7">
           <h1 className="text-balance text-4xl font-semibold leading-[1.02] tracking-normal text-foreground sm:text-6xl">
             {booking.title}
           </h1>
@@ -31,7 +31,7 @@ export function BookingSection({ booking }: BookingSectionProps) {
           src={lipstickGraphic}
           alt=""
           sizes="(min-width: 640px) 340px, 72vw"
-          className="mx-auto mt-10 h-auto w-[72vw] max-w-[340px] sm:mt-12"
+          className="mx-auto mt-10 h-auto w-[72vw] max-w-[340px] sm:mt-12 lg:hidden"
         />
       </div>
     </section>

@@ -76,7 +76,7 @@ export const landingPageData: LandingPageData = {
           "Posibilidad de realizar una prueba de maquillaje previa al evento para definir y perfeccionar el look (adicional de $55.000).",
           "Preparación de la piel más completa: limpieza, hidratación de ojeras con pads de gel, exfoliación de labios, retoque de cejas, crema iluminadora en escote, brazos y espalda."
         ],
-        ideal: "Ideal para novias, quinceañeras, egresadas y eventos especiales.",
+        ideal: "Ideal para quinceañeras, egresadas y eventos especiales.",
         footer: [
           "Todos los maquillajes son de larga duración (+12h) y están pensados para acompañarte durante todo el evento, resistentes al sudor y lágrimas.",
           "Trabajo con productos de preparación de la piel y maquillaje de primeras marcas." 

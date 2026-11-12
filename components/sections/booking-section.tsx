@@ -1,3 +1,6 @@
+import Image from "next/image";
+
+import lipstickGraphic from "@/app/assets/grafica3.jpeg";
 import type { LandingPageData } from "@/content/landing";
 
 type BookingSectionProps = {
@@ -24,6 +27,12 @@ export function BookingSection({ booking }: BookingSectionProps) {
             </li>
           ))}
         </ul>
+        <Image
+          src={lipstickGraphic}
+          alt=""
+          sizes="(min-width: 640px) 340px, 72vw"
+          className="mx-auto mt-10 h-auto w-[72vw] max-w-[340px] sm:mt-12"
+        />
       </div>
     </section>
   );

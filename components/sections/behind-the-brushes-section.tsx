@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import portrait from "@/public/assets/magui.jpeg";
+import mascaraGraphic from "@/app/assets/grafica1.jpeg";
 import { behindTheBrushesContent as content } from "@/content/behind-the-brushes";
 
 export function BehindTheBrushesSection() {
@@ -39,6 +40,15 @@ export function BehindTheBrushesSection() {
               {content.introduction.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
+            </div>
+
+            <div className="relative left-1/2 my-6 flex w-screen -translate-x-1/2 justify-end sm:my-8">
+              <Image
+                src={mascaraGraphic}
+                alt=""
+                sizes="(min-width: 640px) 380px, 72vw"
+                className="h-auto w-[72vw] max-w-[380px]"
+              />
             </div>
 
             <h2 className="editorial-italic mb-5 mt-9 text-2xl font-medium leading-snug text-foreground sm:text-3xl">

@@ -6,8 +6,15 @@ import { BookingSection } from "@/components/sections/booking-section";
 import { landingPageData as data } from "@/content/landing";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reservas" },
   title: "Reservas y condiciones | M Makeup",
-  description: "Consultá la información para reservar tu turno de maquillaje en M Makeup.",
+  description: "Consultá cómo reservar tu maquillaje profesional en Nueva Córdoba o a domicilio, y conocé las condiciones de M Makeup.",
+  openGraph: {
+    title: "Reservas y condiciones | M Makeup",
+    description: "Cómo reservar tu maquillaje en Nueva Córdoba o a domicilio y condiciones de M Makeup.",
+    type: "website",
+    locale: "es_AR"
+  }
 };
 
 export default function BookingPage() {

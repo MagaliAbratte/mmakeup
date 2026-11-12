@@ -10,9 +10,9 @@ export function IntroSection() {
     <section className="overflow-hidden bg-white pb-4 pt-2 sm:pb-14 lg:pb-5">
       <div className="grid items-center gap-3 pl-4 sm:gap-5 md:grid-cols-[minmax(0,1fr)_minmax(360px,46vw)] md:gap-12 md:pl-[max(2rem,calc((100vw-1200px)/2))]">
         <div className="mx-auto max-w-2xl pr-4 text-center md:mx-0 md:pr-0">
-          <p className="editorial-italic mx-auto max-w-xl px-3 text-2xl font-medium leading-snug text-muted-foreground sm:text-3xl">
-            Te ayudo a potenciar tu belleza a través de un maquillaje pensado para vos, tu estilo y cada ocasión
-          </p>
+          <h1 className="editorial-italic mx-auto max-w-xl px-3 text-2xl font-medium leading-snug text-muted-foreground sm:text-3xl">
+            Maquillaje profesional en Córdoba, pensado para vos, tu estilo y cada ocasión
+          </h1>
           <Button asChild className="mt-6 h-auto min-h-[44px] max-w-full whitespace-normal rounded-full px-6">
             <a href="#servicios">Conocé los servicios<ArrowDown className="ml-2 size-4 shrink-0" aria-hidden="true" /></a>
           </Button>

@@ -13,6 +13,7 @@ const title = "Maquillaje para Novias en Córdoba | M Makeup";
 const description = "Maquillaje profesional para novias en Córdoba. Experiencias personalizadas, prueba previa y paquetes para novias e invitadas.";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/novias" },
   title,
   description,
   openGraph: { title, description, locale: "es_AR", type: "website" }
@@ -40,7 +41,7 @@ export default function BridalPage() {
 
         <section aria-labelledby="bridal-title" className="container relative -mt-10 max-w-5xl pb-10 text-center sm:-mt-12 sm:pb-14 lg:pb-8 lg:mt-0 lg:pt-4">
           <h1 id="bridal-title" className="text-balance text-5xl font-semibold leading-[1.05] sm:text-7xl lg:text-8xl">{data.title}</h1>
-          <p className="mt-4 text-base leading-7 text-muted-foreground sm:text-lg">{data.subtitle}</p>
+          <p className="mt-4 text-base leading-7 text-muted-foreground sm:text-lg">{data.subtitle} Maquillaje para novias en Córdoba, en estudio o a domicilio.</p>
           <Button asChild className="mt-6 h-auto min-h-[44px] max-w-full whitespace-normal rounded-full px-6">
             <a href="#propuestas">Conocé las propuestas<ArrowDown className="ml-2 size-4 shrink-0" aria-hidden="true" /></a>
           </Button>

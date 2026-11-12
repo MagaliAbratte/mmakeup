@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { Instagram } from "lucide-react";
 
@@ -5,6 +6,18 @@ import { PageHeader } from "@/components/layout/page-header";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Button } from "@/components/ui/button";
 import { landingPageData } from "@/content/landing";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/portfolio" },
+  title: "Portfolio de maquillaje profesional en Córdoba | M Makeup",
+  description: "Descubrí trabajos de maquillaje profesional de M Makeup para eventos, novias y producciones en Córdoba.",
+  openGraph: {
+    title: "Portfolio de maquillaje profesional en Córdoba | M Makeup",
+    description: "Conocé los trabajos de maquillaje profesional de M Makeup en Córdoba.",
+    type: "website",
+    locale: "es_AR"
+  }
+};
 
 const portfolioImages = [
   { src: "/assets/work1.jpeg", alt: "Trabajo de maquillaje profesional Mmakeup 1" },

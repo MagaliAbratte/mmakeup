@@ -6,8 +6,15 @@ import { BehindTheBrushesSection } from "@/components/sections/behind-the-brushe
 import { landingPageData } from "@/content/landing";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/detras-de-las-brochas" },
   title: "Detrás de las brochas | M Makeup",
   description: "Conocé a Magui, maquilladora profesional y creadora de M Makeup en Córdoba. Su historia y su forma de acompañarte en cada maquillaje.",
+  openGraph: {
+    title: "Detrás de las brochas | M Makeup",
+    description: "Conocé a Magui, maquilladora profesional y creadora de M Makeup en Córdoba.",
+    type: "website",
+    locale: "es_AR"
+  }
 };
 
 export default function BehindTheBrushesPage() {
